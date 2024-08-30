@@ -247,6 +247,10 @@ input:focus, textarea:focus, select:focus, button:focus {
 .input-group {
     margin-bottom: 15px;
 }
+.input-group2 {
+	padding: 10px 5px;
+
+}
 .form-control:focus {
     background-color: transparent;
     border-color: #007bff;
@@ -2038,3 +2042,7 @@ a.hr_btn.btn2,a.hr_btn.btn3{
 	}
 }
 /*---------- Responsive css end -------*/
+.btn2{
+	width: 1000x;
+    height: 1000px;
+}

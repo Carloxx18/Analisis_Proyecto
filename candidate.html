@@ -61,7 +61,7 @@ Version: 1.0.0
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 						<div class="hr_for_staff">
-							<a href="#" class="hr_btn">¡Unite a nuestro equipo!</a>
+							<!--<a href="#" class="hr_btn">¡Unite a nuestro equipo!</a>-->
 						</div>
 					</div>
 					
@@ -97,7 +97,7 @@ Version: 1.0.0
 										 <li><a href="service_single.html">sevice single</a></li> 
 									</ul>-->
 								</li>
-								<li><a href="candidate.html">Candidatos</a></li>
+								<li><a href="candidate.html">Perfil</a></li>
 								<li><a href="contact.html">Contacto</a></li>
 							</ul>
 						</div>
@@ -110,10 +110,10 @@ Version: 1.0.0
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<div class="hr_breadcrum_wrapper">
-							<h1>Formulario de Candidatos</h1>
+							<h1>Perfil</h1>
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-								<li class="breadcrumb-item active">Candidatos</li>
+								<li class="breadcrumb-item active">Perfil</li>
 							</ol>
 						</div>
 					</div>
@@ -126,7 +126,7 @@ Version: 1.0.0
 					<div class="col-lg-12">
 						<div class="hr_heading_wrapper">
 							<h1>RRHH</h1>
-							<h2>Formulario de candidatos</h2>
+							<h2>Informacion del candidato</h2>
 						</div>
 					</div>
 				</div>
@@ -139,9 +139,26 @@ Version: 1.0.0
 							<input type="text" class="form-control" placeholder="Email" name="email">
 						</div>
 						<div class="input-group">
-							<input type="file" class="form-control" name="attach_cv">
+							<input type="file" class="form-control" name="attach_cv" >
 						</div>
+							<label for="lag">Genero</label>
+									<select name="genero" id="lag">
+										<option value="Hombre">Hombre</option>
+										<option value="Mujer">Mujer</option>
+										<option value="Indefinido">Indefinido</option>
+									</select>
+
+									
+									<label for="lag">Fecha de nacimiento</label>
+									
+						<input type="date" id="Fecha"name="Fecha de nacimiento">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Pretencion Salarial" name="salario">
+						</div>
+													
 					</div>
+					
+					
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="Telefono" name="phone_number">
@@ -150,16 +167,378 @@ Version: 1.0.0
 							<input type="text" class="form-control" placeholder="Puesto a postularte" name="job_sector">
 						</div>
 						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Contraseña" name="Contrasena">
-						</div>
+							<input type="text" class="form-control" placeholder="Identificación (DPI, DUI o Pasaporte)" name="Identificación (DPI, DUI o Pasaporte)">
 						
-					</div>	
+						</div>
+									<label for="lag">Estado Civil</label>
+									<select name="genero" id="lag">
+										<option value="soltero">Soltero</option>
+										<option value="casado">Casado</option>
+									</select>
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Años de experiencia" name="Años de experiencia">
+									</div>
 					</div>
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<div class="input-group">
-							<textarea type="text" class="form-control" placeholder="Descripcion" name="comment"></textarea>
+							<textarea type="text" class="form-control" placeholder="Direccion" name="Direccion"></textarea>
 						</div>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Municipio de residencia" name="Municipio">
+						</div>
+							<label for="lag">Posee Vehiculo</label>
+									<select name="Pose Vehiculo" id="lag">
+										<option value="si">Si</option>
+										<option value="no">No</option>
+									</select>
+									<label for="lag">Tipo de licencia</label>
+									<select name="licencia" id="lag">
+										<option value="Motocicleta">Ninguna</option>
+										<option value="pesada">Pesada</option>
+										<option value="liviana">Liviana</option>
+										<option value="Motocicleta">Motocicleta</option>
+									</select>		
+									<h3>Idiomas</h3>		
 					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="input-group">
+							
+							<div>
+								<label for="lag">Aleman</label>	
+										<input type="checkbox" id ="idioma1" value="first_checkbox">
+								<label for="lag">Ingles</label>	
+										<input type="checkbox" id ="idioma2" value="first_checkbox">
+								<label for="lag">Frances</label>	
+										<input type="checkbox" id ="idioma3" value="first_checkbox">
+								<label for="lag">Italiano</label>	
+										<input type="checkbox" id ="idioma3" value="first_checkbox">
+								<label for="lag">Otros</label>	
+										<input type="checkbox" id ="idioma1" value="first_checkbox">
+								<div class="input-group">
+											<textarea type="text" class="form-control" placeholder="Especifique otros" name="Otros idioma"></textarea>
+								</div>
+							</div>	
+						</div>
+						<H3>Areas</H3>
+					</div>
+					
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="input-group">
+							
+							<div>
+								<label class="input-group2" for="lag">Académico (NUEVO)</label>	
+										<input type="checkbox" id ="idioma1" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Administración</label>	
+										<input type="checkbox" id ="idioma2" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Agrónomos</label>	
+										<input type="checkbox" id ="idioma3" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Agroindustria</label>	
+										<input type="checkbox" id ="idioma3" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Alimentación</label>	
+										<input type="checkbox" id ="idioma1" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Arquitectos</label>	
+										<input type="checkbox" id ="idioma1" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Arte</label>	
+										<input type="checkbox" id ="idioma2" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Asesoría</label>	
+										<input type="checkbox" id ="idioma3" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Audiometría</label>	
+										<input type="checkbox" id ="idioma3" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Auditoría</label>	
+										<input type="checkbox" id ="idioma1" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Banca</label>	
+										<input type="checkbox" id ="idioma1" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Belleza</label>	
+										<input type="checkbox" id ="idioma2" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Biología</label>	
+										<input type="checkbox" id ="idioma3" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Bodega</label>	
+										<input type="checkbox" id ="idioma3" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Cajero</label>	
+										<input type="checkbox" id ="idioma1" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Call Center Bilingüe</label>	
+										<input type="checkbox" id ="idioma1" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Call Center en Español</label>	
+										<input type="checkbox" id ="idioma2" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Catedráticos</label>	
+										<input type="checkbox" id ="idioma3" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="lag">Cobros</label>	
+										<input type="checkbox" id ="idioma3" value="first_checkbox"><label for="">|</label>
+								<label class="input-group2" for="comercial">Comercial</label>
+										<input type="checkbox" id="comercial" value="comercial"><label for="">|</label>
+								<label class="input-group2" for="compras">Compras</label>
+										<input type="checkbox" id="compras" value="compras"><label for="">|</label>
+								<label class="input-group2" for="comunicacion">Comunicación</label>
+										<input type="checkbox" id="comunicacion" value="comunicacion"><label for="">|</label>
+								<label class="input-group2" for="construccion">Construcción</label>
+										<input type="checkbox" id="construccion" value="construccion"><label for="">|</label>
+								<label class="input-group2" for="contabilidad">Contabilidad</label>
+										<input type="checkbox" id="contabilidad" value="contabilidad"><label for="">|</label>
+								<label class="input-group2" for="control_calidad">Control de calidad</label>
+										<input type="checkbox" id="control_calidad" value="control_calidad"><label for="">|</label>
+								<label class="input-group2" for="costura">Costura y Confección</label>
+										<input type="checkbox" id="costura" value="costura"><label for="">|</label>
+										
+										<label class="input-group2" for="digitadores">Digitadores</label>
+										<input type="checkbox" id="digitadores" value="digitadores"><label for="">|</label>
+										
+										
+										<label class="input-group2" for="discapacidad">Discapacidad</label>
+										<input type="checkbox" id="discapacidad" value="discapacidad"><label for="">|</label>
+										
+										<label class="input-group2" for="diseno">Diseño</label>
+										<input type="checkbox" id="diseno" value="diseno"><label for="">|</label>
+										
+										<label class="input-group2" for="economistas">Economistas</label>
+										<input type="checkbox" id="economistas" value="economistas"><label for="">|</label>
+										
+										<label class="input-group2" for="edecanes">Edecanes</label>
+										<input type="checkbox" id="edecanes" value="edecanes"><label for="">|</label>
+										
+										<label class="input-group2" for="educacion">Educación</label>
+										<input type="checkbox" id="educacion" value="educacion"><label for="">|</label>
+										
+										<label class="input-group2" for="electrificacion">Electrificación</label>
+										<input type="checkbox" id="electrificacion" value="electrificacion"><label for="">|</label>
+										
+										<label class="input-group2" for="enfermeras">Enfermeras</label>
+										<input type="checkbox" id="enfermeras" value="enfermeras"><label for="">|</label>
+										
+										<label class="input-group2" for="farmacia">Farmacia</label>
+										<input type="checkbox" id="farmacia" value="farmacia"><label for="">|</label>
+										
+										<label class="input-group2" for="finanzas">Finanzas</label>
+										<input type="checkbox" id="finanzas" value="finanzas"><label for="">|</label>
+										
+										<label class="input-group2" for="fines_semana">Fines de semana</label>
+										<input type="checkbox" id="fines_semana" value="fines_semana"><label for="">|</label>
+										
+										<label class="input-group2" for="fotografia">Fotografía</label>
+										<input type="checkbox" id="fotografia" value="fotografia"><label for="">|</label>
+										
+										<label class="input-group2" for="general">General</label>
+										<input type="checkbox" id="general" value="general"><label for="">|</label>
+										
+										<label class="input-group2" for="gerencias">Gerencias</label>
+										<input type="checkbox" id="gerencias" value="gerencias"><label for="">|</label>
+										
+										<label class="input-group2" for="gestion_hospitalaria">Gestión Hospitalaria</label>
+										<input type="checkbox" id="gestion_hospitalaria" value="gestion_hospitalaria"><label for="">|</label>
+										
+										<label class="input-group2" for="hoteles_restaurantes">Hoteles y Restaurantes</label>
+										<input type="checkbox" id="hoteles_restaurantes" value="hoteles_restaurantes"><label for="">|</label>
+										
+										<label class="input-group2" for="importaciones_exportaciones">Importaciones-Exportaciones</label>
+										<input type="checkbox" id="importaciones_exportaciones" value="importaciones_exportaciones"><label for="">|</label>
+										
+										<label class="input-group2" for="informatica_internet">Informática/Internet</label>
+										<input type="checkbox" id="informatica_internet" value="informatica_internet"><label for="">|</label>
+										
+										<label class="input-group2" for="ingenieros">Ingenieros</label>
+										<input type="checkbox" id="ingenieros" value="ingenieros"><label for="">|</label>
+										
+										<label class="input-group2" for="jefaturas">Jefaturas</label>
+										<input type="checkbox" id="jefaturas" value="jefaturas"><label for="">|</label>
+										
+										<label class="input-group2" for="juridico">Jurídico</label>
+										<input type="checkbox" id="juridico" value="juridico"><label for="">|</label>
+										
+										<label class="input-group2" for="litografia">Litografía</label>
+										<input type="checkbox" id="litografia" value="litografia"><label for="">|</label>
+										
+										<label class="input-group2" for="logistica">Logística</label>
+										<input type="checkbox" id="logistica" value="logistica"><label for="">|</label>
+										
+										<label class="input-group2" for="medicos">Médicos</label>
+										<input type="checkbox" id="medicos" value="medicos"><label for="">|</label>
+										
+										<label class="input-group2" for="musica">Música</label>
+										<input type="checkbox" id="musica" value="musica"><label for="">|</label>
+										
+										<label class="input-group2" for="maestros">Maestros</label>
+										<input type="checkbox" id="maestros" value="maestros"><label for="">|</label>
+										
+										<label class="input-group2" for="mantenimiento">Mantenimiento</label>
+										<input type="checkbox" id="mantenimiento" value="mantenimiento"><label for="">|</label>
+										
+										<label class="input-group2" for="mecanicos">Mecánicos</label>
+										<input type="checkbox" id="mecanicos" value="mecanicos"><label for="">|</label>
+										
+										<label class="input-group2" for="medio_ambiente">Medio Ambiente</label>
+										<input type="checkbox" id="medio_ambiente" value="medio_ambiente"><label for="">|</label>
+										
+										<label class="input-group2" for="medio_tiempo">Medio tiempo</label>
+										<input type="checkbox" id="medio_tiempo" value="medio_tiempo"><label for="">|</label>
+										
+										<label class="input-group2" for="mensajeria">Mensajería</label>
+										<input type="checkbox" id="mensajeria" value="mensajeria"><label for="">|</label>
+										
+										<label class="input-group2" for="mercadeo">Mercadeo</label>
+										<input type="checkbox" id="mercadeo" value="mercadeo"><label for="">|</label>
+										
+										<label class="input-group2" for="motorista">Motorista</label>
+										<input type="checkbox" id="motorista" value="motorista"><label for="">|</label>
+										
+										<label class="input-group2" for="nutricion">Nutrición</label>
+										<input type="checkbox" id="nutricion" value="nutricion"><label for="">|</label>
+										
+										<label class="input-group2" for="odontologia">Odontología</label>
+										<input type="checkbox" id="odontologia" value="odontologia"><label for="">|</label>
+										
+										<label class="input-group2" for="oftalmologia">Oftalmología</label>
+										<input type="checkbox" id="oftalmologia" value="oftalmologia"><label for="">|</label>
+										
+										<label class="input-group2" for="operativa">Operativa</label>
+										<input type="checkbox" id="operativa" value="operativa"><label for="">|</label>
+										
+										<label class="input-group2" for="optometria">Optometría</label>
+										<input type="checkbox" id="optometria" value="optometria"><label for="">|</label>
+										
+										<label class="input-group2" for="pilotos">Pilotos</label>
+										<input type="checkbox" id="pilotos" value="pilotos"><label for="">|</label>
+										
+										<label class="input-group2" for="practicantes">Practicantes</label>
+										<input type="checkbox" id="practicantes" value="practicantes"><label for="">|</label>
+										
+										<label class="input-group2" for="promotores">Promotores</label>
+										<input type="checkbox" id="promotores" value="promotores"><label for="">|</label>
+										
+										<label class="input-group2" for="psicologos">Psicólogos</label>
+										<input type="checkbox" id="psicologos" value="psicologos"><label for="">|</label>
+										
+										<label class="input-group2" for="publicidad">Publicidad</label>
+										<input type="checkbox" id="publicidad" value="publicidad"><label for="">|</label>
+										
+										<label class="input-group2" for="quimica_farmaceutica">Química Farmacéutica</label>
+										<input type="checkbox" id="quimica_farmaceutica" value="quimica_farmaceutica"><label for="">|</label>
+										
+										<label class="input-group2" for="receptor_pagador">Receptor/Pagador</label>
+										<input type="checkbox" id="receptor_pagador" value="receptor_pagador"><label for="">|</label>
+										
+										<label class="input-group2" for="recursos_humanos">Recursos Humanos</label>
+										<input type="checkbox" id="recursos_humanos" value="recursos_humanos"><label for="">|</label>
+										
+										<label class="input-group2" for="relaciones_publicas">Relaciones Públicas</label>
+										<input type="checkbox" id="relaciones_publicas" value="relaciones_publicas"><label for="">|</label>
+										
+										<label class="input-group2" for="salud">Salud</label>
+										<input type="checkbox" id="salud" value="salud"><label for="">|</label>
+										
+										<label class="input-group2" for="secretarias">Secretarias</label>
+										<input type="checkbox" id="secretarias" value="secretarias"><label for="">|</label>
+										
+										<label class="input-group2" for="seguridad">Seguridad</label>
+										<input type="checkbox" id="seguridad" value="seguridad"><label for="">|</label>
+										
+										<label class="input-group2" for="seguros">Seguros</label>
+										<input type="checkbox" id="seguros" value="seguros"><label for="">|</label>
+										<label class="input-group2" for="servicio_cliente">Servicio al cliente</label>
+										<input type="checkbox" id="servicio_cliente" value="servicio_cliente"><label for="">|</label>
+										
+										<label class="input-group2" for="sin_experiencia">Sin Experiencia (NUEVO)</label>
+										<input type="checkbox" id="sin_experiencia" value="sin_experiencia"><label for="">|</label>
+										
+										<label class="input-group2" for="sonido">Sonido</label>
+										<input type="checkbox" id="sonido" value="sonido"><label for="">|</label>
+										
+										<label class="input-group2" for="supermercados">Supermercados</label>
+										<input type="checkbox" id="supermercados" value="supermercados"><label for="">|</label>
+										
+										<label class="input-group2" for="supervisores">Supervisores</label>
+										<input type="checkbox" id="supervisores" value="supervisores"><label for="">|</label>
+										
+										<label class="input-group2" for="tecnicos">Técnicos</label>
+										<input type="checkbox" id="tecnicos" value="tecnicos"><label for="">|</label>
+										
+										<label class="input-group2" for="telecomunicaciones">Telecomunicaciones</label>
+										<input type="checkbox" id="telecomunicaciones" value="telecomunicaciones"><label for="">|</label>
+										
+										<label class="input-group2" for="temporal">Temporal</label>
+										<input type="checkbox" id="temporal" value="temporal"><label for="">|</label>
+										
+										<label class="input-group2" for="tiempo_parcial">Tiempo Parcial</label>
+										<input type="checkbox" id="tiempo_parcial" value="tiempo_parcial"><label for="">|</label>
+										
+										<label class="input-group2" for="trabajo_desde_casa">Trabajo desde casa</label>
+										<input type="checkbox" id="trabajo_desde_casa" value="trabajo_desde_casa"><label for="">|</label>
+										
+										<label class="input-group2" for="trabajo_social">Trabajo Social</label>
+										<input type="checkbox" id="trabajo_social" value="trabajo_social"><label for="">|</label>
+										
+										<label class="input-group2" for="traductores_jurado">Traductores Jurado</label>
+										<input type="checkbox" id="traductores_jurado" value="traductores_jurado"><label for="">|</label>
+										
+										<label class="input-group2" for="tramitador_aduanal">Tramitador Aduanal</label>
+										<input type="checkbox" id="tramitador_aduanal" value="tramitador_aduanal"><label for="">|</label>
+										
+										<label class="input-group2" for="turismo">Turismo</label>
+										<input type="checkbox" id="turismo" value="turismo"><label for="">|</label>
+										
+										<label class="input-group2" for="vacacionistas">Vacacionistas</label>
+										<input type="checkbox" id="vacacionistas" value="vacacionistas"><label for="">|</label>
+										
+										<label class="input-group2" for="ventas">Ventas</label>
+										<input type="checkbox" id="ventas" value="ventas"><label for="">|</label>
+										
+										<label class="input-group2" for="veterinario">Veterinario</label>
+										<input type="checkbox" id="veterinario" value="veterinario"><label for="">|</label>
+										
+										<label class="input-group2" for="visitador_medico">Visitador Médico</label>
+										<input type="checkbox" id="visitador_medico" value="visitador_medico"><label for="">|</label>
+										
+										<label class="input-group2" for="zootecnista">Zootecnista</label>
+										<input type="checkbox" id="zootecnista" value="zootecnista">
+										
+								
+							</div>	
+							
+						</div>
+						<h3>Laboral</h3>
+					</div>
+					
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Titulo" name="titulo">
+							</div>
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Profesion" name="profesion">
+						</div>
+						<div class="input-group">
+							<textarea type="text" class="form-control" placeholder="Formacion Académica" name="formacion"></textarea>
+						</div>
+						<div class="input-group">
+							<textarea type="text" class="form-control" placeholder="Experiencia Profesional (ingresar empresas donde ha laborado, fechas, puestos y responsabilidades)" name="experiencia"></textarea>
+						</div>
+						<div class="input-group">
+							<textarea type="text" class="form-control" placeholder="Cursos Adicionales" name="cursos"></textarea>
+						</div>
+						<h3>Referencias</h3>
+						<div class="input-group">
+							<textarea type="text" class="form-control" placeholder="Referencias Laborales" name="Referenciasl"></textarea>
+						</div>
+						<div class="input-group">
+							<textarea type="text" class="form-control" placeholder="Referencias Personales" name="Referenciasp"></textarea>
+						</div>
+						<h3>Otros</h3>
+						<div class="input-group">
+							<textarea type="text" class="form-control" placeholder="Habilidades" name="habilidades"></textarea>
+						</div>
+						<div class="input-group">
+							<textarea type="text" class="form-control" placeholder="Intereses" name="intereses"></textarea>
+						</div>
+						<h3>Seguridad</h3>
+						<input type="checkbox" id ="idioma1" value="first_checkbox">
+						<label class="input-group2" for="lag">Si, Permitir que todos puedan ver este currículum.</label>	
+						<input type="checkbox" id ="idioma1" value="first_checkbox">
+						<label class="input-group2" for="lag">Sí, pero solo para las plazas a las que aplico.</label>			
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<input type="checkbox" id ="idioma1" value="first_checkbox">
+						<label class="input-group2" for="lag">Aceptar Terminos y condiciones de Reclutamiento Outsourcing.</label>	
+
+					</div>
+					</div>
+							
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
 						<a href="#" class="hr_btn">Enviar CV</a>
 					</div>
